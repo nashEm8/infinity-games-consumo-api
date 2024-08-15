@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+        <div class="container" id="menu-restrito" style="padding: 20px 0;">
+            <span><a routerLink="inicio"><img src="./assets/img/logo-footer.png"></a></span>
+            <nav style="display: flex; align-items: center; gap: 35px;">
+                <span><a routerLink="/restrito/lista">Listar produtos</a></span>
+                <span><a routerLink="/restrito/cadastro">Cadastrar produtos</a></span>
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="logout()">
+                    <span class="material-icons">logout</span>
+                </button>
+            </nav>
+        </div>
+    </mat-toolbar>
+    

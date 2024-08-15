@@ -1,0 +1,72 @@
+#categoria{
+  padding: 150px 0;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#categoria .text-categoria{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+}
+
+#categoria .text-categoria h2{
+  font-size: 40px;
+}
+
+#categoria .text-categoria p{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 0;
+  line-height: 1.5rem;
+}
+
+#categoria .text-categoria .botao-contato{
+  width: 250px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #C63636;
+  border: 3px solid #000;
+}
+
+#categoria .text-categoria .botao-contato a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#categoria .card-categoria{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 40px;
+}
+
+#categoria .card-categoria .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D346D;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  width: 250px;
+  padding: 25px 40px;
+}
+
+#categoria .card-categoria .card img{
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.mat-mdc-card-content:last-child{
+  padding: 0;
+}
