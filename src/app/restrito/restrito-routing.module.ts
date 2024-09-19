@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
-import { ListaProdutoComponent } from './lista-produto/lista-produto.component';
-import { AtualizaProdutoComponent } from './atualiza-produto/atualiza-produto.component';
+import { CadastroNoticiaComponent } from './cadastro-noticia/cadastro-noticia.component';
+import { ListaNoticiaComponent } from './lista-noticia/lista-noticia.component';
+import { AtualizaNoticiaComponent } from './atualiza-noticia/atualiza-noticia.component';
 import { RestritoComponent } from './restrito.component';
-import { GuardGuard } from '../guard.guard';
 
 const restritoRoutes: Routes = [
     {
         path: 'restrito', component: RestritoComponent, children: [
-            { path: 'cadastro', component: CadastroProdutoComponent, canActivate: [GuardGuard] },
-            { path: 'lista', component: ListaProdutoComponent, canActivate: [GuardGuard] },
-            { path: 'editar/:id', component: AtualizaProdutoComponent, canActivate: [GuardGuard] }
+            { path: 'cadastro', component: CadastroNoticiaComponent },
+            { path: 'lista', component: ListaNoticiaComponent },
+            { path: 'editar/:id', component: AtualizaNoticiaComponent }
         ]
     },
 
